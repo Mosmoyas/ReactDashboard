@@ -1,0 +1,93 @@
+/* Start Sidebar ************************************************************/
+.sidebar {
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logo-h3 {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.sidebar>h3::after,
+.sidebar>h3::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar>h3::before {
+    height: 2px;
+    width: 80px;
+}
+
+.sidebar>h3::after {
+    height: 12px;
+    width: 12px;
+    border: 4px solid white;
+    border-radius: 50%;
+    bottom: -29px;
+
+}
+
+
+.sidebar ul li a {
+    transition: .3s;
+    margin-bottom: 5px;
+
+}
+
+.sidebar ul li a.actice,
+.sidebar ul li a:hover {
+    background-color: #f6f6f6;
+}
+
+.sidebar ul li a span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@media (max-width:767px) {
+    .sidebar {
+        width: 88px;
+        padding: 10px;
+    }
+
+    .sidebar>h3 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar>h3::before,
+    .sidebar>h3::after {
+        display: none;
+    }
+
+    .sidebar ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar ul li a span {
+        display: none;
+    }
+}
+
+/* End Sidebar */

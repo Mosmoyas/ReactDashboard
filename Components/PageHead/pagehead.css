@@ -1,0 +1,36 @@
+.phead {
+    margin: 20px 20px 40px;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+.phead::before,
+.phead::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #ddd;
+}
+
+.phead::before {
+    width: 180px;
+    background-color: white;
+}
+
+.phead::after {
+    width: 40px;
+    /* background-color: var(--blue-color); */
+    background-color: blue;
+
+    transition: var(--transition-time);
+}
+
+.phead:hover::after {
+    width: 180px;
+}
