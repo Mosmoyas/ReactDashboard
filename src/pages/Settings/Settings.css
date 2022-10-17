@@ -1,0 +1,246 @@
+/* <!-- Start Settings page  --> */
+
+.setting-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width:767px) {
+    .setting-page {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.setting-page .close-message {
+    border: 1px solid #ccc;
+    resize: none;
+    min-width: none;
+    min-height: 150px;
+}
+
+.disable {
+    background-color: rgba(192, 192, 192, 0.4);
+    cursor: no-drop;
+    color: rgb(164, 164, 164);
+}
+
+/*End Components*/
+/*Start WIdth +height************************************************************/
+
+
+/* <!-- End Settings page  --> */
+
+.security-box {
+    padding-bottom: 15px;
+}
+
+.security-box:not(:last-child) {
+    border-bottom: 1px solid #eee
+}
+
+/* <!-- Start Genral Info   --> */
+.general-info .email {
+    display: inline-flex !important;
+    width: 80% !important;
+}
+
+/* <!-- End Genral Info   --> */
+
+/* <!-- Start Social Media Settings --> */
+.setting-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 1s;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.setting-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    border-radius: 0 6px 6px 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.setting-page .social-boxes>div:focus-within i {
+    color: black;
+    font-size: 19px;
+    transform: rotate(-360deg) scale(1.1);
+    left: -3px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+/* <!-- Emd Social Media Settings --> */
+/* Start Widgets Control */
+.widgets-control .control input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.widgets-control .control label {
+    position: relative;
+    padding-left: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.widgets-control .control label::before {
+    content: "";
+    height: 14px;
+    width: 14px;
+    border: 2px solid var(--grey-color);
+}
+
+.widgets-control .control label:hover:before {
+    border-color: var(--blue-alt-color);
+}
+
+.widgets-control .control input:checked+label::before {
+    background-color: var(--blue-color);
+}
+
+.widgets-control .control label::after {
+    font-family: var(--fontStyleFamily);
+    content: "\f00c";
+    font-weight: 900;
+    color: white;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+
+}
+
+.backup-control .control input:checked+label::after {
+    transform: scale(1);
+}
+
+/* End backup Control */
+/* Start backup Backup */
+
+.backup-control input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.backup-control .date label {
+    position: relative;
+    padding-left: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.backup-control .date label::before,
+.backup-control .date label::after {
+    content: "";
+
+    position: absolute;
+    font-size: 12px;
+    transition: 0.3s;
+    border-radius: 50%;
+    left: 0
+}
+
+.backup-control .date label::before {
+    height: 18px;
+    width: 18px;
+    border: 2px solid var(--grey-color);
+    left: 0;
+    top: 25%;
+    margin-top: -10px;
+
+}
+
+.backup-control .date label::after {
+    color: white;
+    width: 12px;
+    height: 12px;
+    left: 5px;
+    background-color: var(--blue-color);
+    top: 0;
+    transform: scale(0) rotate(360deg);
+}
+
+.backup-control .date input:checked+label::before {
+    border-color: var(--blue-color);
+}
+
+.backup-control .date input:checked+label::after {
+    transform: scale(1);
+}
+
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+@media (max-width:767px) {
+    .backup-control .servers {
+        flex-wrap: wrap;
+    }
+
+}
+
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+    transition: 0.3s;
+}
+
+.backup-control .servers .server label {
+    cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+
+}
+
+@media (max-width:767px) {
+    .profile-page .toggle-switch {
+        margin: auto;
+    }
+}
+
+.profile-page .toggle-switch {
+    height: 24px;
+}
+
+.profile-page .toggle-checkbox:checked+.toggle-switch::before {
+    left: 48px;
+}
+
+.profile-page .toggle-switch::before {
+    width: 20;
+    height: 18px;
+    font-size: 8px;
+
+}
+
+/*----End------------on/off---------------*/
+/* End backup Backup */
+/*End Settings Page*/

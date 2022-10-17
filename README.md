@@ -1,2 +1,2 @@
-# ReactDashboard
-Dashboard with React
+# RJSDashboard
+Dashboard with ReactJS
