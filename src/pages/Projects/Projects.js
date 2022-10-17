@@ -11,6 +11,7 @@ const Projects = () => {
         <p class="c-grey mt-10 mb-20 fs-14">{val.description}</p>
         <div class="team ">
 
+          for
           <a href="/#"><img src={val.team[0]} alt="01" /></a>
           <a href="/#"><img src={val.team[1]} alt="01" /></a>
           <a href="/#"><img src={val.team[2]} alt="01" /></a>
