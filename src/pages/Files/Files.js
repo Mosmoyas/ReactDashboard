@@ -23,7 +23,7 @@ const Files = () => {
   })
   return (
     <>
-      <PageHead></PageHead>
+      <PageHead>Files</PageHead>
       <div class="files-page  d-flex m-20 gap-20">
         <div class="files-stats bg-white p-20 rad-10 ">
           <h2 class=" mt-0 mb-15 txt-c-mobile">Files Statistics</h2>
@@ -72,19 +72,7 @@ const Files = () => {
         </div>
         <div class="files-content d-grid gap-20">
           {FileData}
-          {/* <div class="file bg-white p-10 rad-10"> */}
-          {/* <i class="fa-solid fa-download c-grey p-absolute"></i>
-            <div class="icon txt-c">
-              <img src="images/pdf.png" alt="" class="mt-15 mb-15" />
-            </div>
-            <div class="txt-c mb-10 fs-14">
-              my-file.pdf
-            </div>
-            <p class="c-grey fs-13">Mosmoyas</p>
-            <div class="info between-flex mt-10 pt-10 fs-13 c-grey">
-              <span>20/06/2022</span>
-              <span>5.5MB</span>
-            </div> */}
+
           {/* </div> */}
         </div>
       </div>

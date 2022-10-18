@@ -27,7 +27,7 @@ const Courses = () => {
   })
   return (
     <>
-      <PageHead>Plans</PageHead>
+      <PageHead>Courses</PageHead>
 
       <div class="courses-page  d-grid m-20 gap-20">
         {Courses}

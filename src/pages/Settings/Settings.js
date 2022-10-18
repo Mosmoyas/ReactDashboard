@@ -1,8 +1,12 @@
 import "./Settings.css"
+import { PageHead } from '../../Components'
+
 
 const Settings = () => {
   return (
     <>
+      <PageHead>Settings</PageHead>
+
       {/* <!-- Start Settings page  --> */}
       <div class="setting-page  m-20 d-grid gap-20">
         {/* <!-- Start Settings Box  --> */}

@@ -49,7 +49,7 @@ const Friends = () => {
 
 
     <>
-      <PageHead>Plans</PageHead>
+      <PageHead>Friends</PageHead>
 
       <div className="friends-page d-grid m-20 gap-20">
         {FriendsData}

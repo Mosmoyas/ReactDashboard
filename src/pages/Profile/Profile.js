@@ -1,4 +1,5 @@
 import "./Profile.css"
+import { PageHead } from '../../Components'
 import avatar01 from "../../assets/images/avatar-1.jpg"
 import activity01 from "../../assets/images/activity-01.png"
 import activity02 from "../../assets/images/activity-02.png"
@@ -8,6 +9,7 @@ import activity03 from "../../assets/images/activity-03.webp"
 const Profile = () => {
   return (
     <>
+      <PageHead>Profile</PageHead>
       <div class="profile-page m-20">
 
         {/* <!-- Start OverView   --> */}
@@ -22,11 +24,16 @@ const Profile = () => {
               <span style={{ width: "80" }}></span>
             </div>
             <div class="rating mt-10 mb-10">
-              <i class="fa-solid fa-star c-orange"></i>
-              <i class="fa-solid fa-star c-orange"></i>
-              <i class="fa-solid fa-star c-orange"></i>
-              <i class="fa-solid fa-star c-orange"></i>
-              <i class="fa-solid fa-star c-orange"></i>
+
+
+              {(() => {
+                let stars = []
+                for (let i = 0; i < 6; i++) {
+                  stars.push(<i class="fa-solid fa-star c-orange"></i>)
+
+                }
+                return stars;
+              })()}
 
             </div>
             <p class="mt-10 fs-15 c-grey  mb-10">550 Rating</p>
