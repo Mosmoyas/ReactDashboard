@@ -138,3 +138,283 @@ textarea {
 }
 
 /* End Targets */
+/* Start tickets widget */
+.tickets .box {
+    border: 1PX solid var(--grey-light-color);
+    width: calc(50% - 10px);
+}
+
+@media (max-width:767px) {
+    .tickets .box {
+        width: 100%;
+    }
+}
+
+/* End tickets widget */
+/* Start Latest-News widget  */
+
+.latest-news .news-line:not(:last-of-type) {
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.latest-news img {
+    width: 100px;
+    min-height: 70px;
+}
+
+.latest-news .info {
+    flex-grow: 1;
+}
+
+.latest-news .date {
+    width: 100px;
+    padding: 3px 8px;
+}
+
+@media (max-width:767px) {
+    .latest-news .news-line {
+        display: block;
+    }
+
+    .latest-news .news-line .date {
+        width: fit-content;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* End Latest News Widget */
+/* Start Latest Tasks Widget */
+.latest-tasks .task-row:not(:last-of-type) {
+    border-bottom: 1px solid var(--grey-light-color);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.latest-tasks .info {
+    flex-grow: 1;
+}
+
+.latest-tasks .done {
+    opacity: 0.3;
+}
+
+.latest-tasks .done h3,
+.latest-tasks .done p {
+    text-decoration: line-through;
+}
+
+.latest-tasks .delete {
+    cursor: pointer;
+
+    transition: var(--transition-time);
+}
+
+.latest-tasks .delete:hover {
+    color: var(--red-color);
+}
+
+.latest-tasks .task-row.done .delete:hover {
+    color: grey;
+    opacity: 1;
+}
+
+/* End Latest Tasks Widget */
+/* Start Latest Upload Widget */
+.latest-upload ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.latest-upload ul li div img {
+    height: 40px;
+    width: 40px;
+}
+
+/* End Latest Upload Widget */
+
+/* Start Last Project Widget */
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.last-project ul li.done::before {
+    background-color: blue;
+}
+
+.last-project ul li.current::before {
+    animation: change-color .8s infinite alternate;
+}
+
+.last-project .launch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+}
+
+/* Start Last Project Widget */
+/* Start Reminders Widget */
+
+.remeinders ul li .key {
+    width: 15px;
+    height: 15px;
+
+}
+
+.remeinders ul li>.blue {
+    border-left: 2px solid var(--blue-color);
+}
+
+.remeinders ul li>.orange {
+    border-left: 2px solid var(--orange-color);
+}
+
+.remeinders ul li>.green {
+    border-left: 2px solid var(--green-color);
+}
+
+.remeinders ul li>.red {
+    border-left: 2px solid var(--red-color);
+}
+
+/* Start Reminders Widget */
+
+/*Start Last Post Widget*/
+.last-post .top,
+.last-post .post {
+    border-bottom: 1px solid #ccc;
+}
+
+/*End Last Post Widget*/
+
+/* <!-- Start  Social Media Widget --> */
+.social-media .box {
+    padding-left: 70px;
+}
+
+.social-media .box i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: .3s;
+}
+
+.social-media .box i:hover {
+    transform: rotate(5deg);
+}
+
+.social-media .facebook {
+    background-color: #0076d720;
+    color: #0078d7;
+}
+
+.social-media .facebook i,
+.social-media .facebook a {
+    background-color: #0078d7;
+}
+
+.social-media .twitter {
+    background-color: #1da1f220;
+    color: #1da1f2;
+}
+
+.social-media .twitter i,
+.social-media .twitter a {
+    background-color: #1da1f2;
+}
+
+
+.social-media .youtube {
+    background-color: #ff000020;
+    color: #ff0000;
+}
+
+.social-media .youtube i,
+.social-media .youtube a {
+    background-color: #ff0000;
+}
+
+
+.social-media .linkedin {
+    background-color: #0077b520;
+    color: #0077b5;
+}
+
+.social-media .linkedin i,
+.social-media .linkedin a {
+    background-color: #0077b5;
+}
+
+/*Start Projects Table*/
+.projects .responsive-table {
+    overflow-x: auto;
+}
+
+.projects table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+.projects thead td {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.projects table td {
+    padding: 15px;
+}
+
+.projects tbody td {
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    transition: .3s;
+
+}
+
+.projects tbody td:last-child {
+    border-right: 1px solid #eee;
+}
+
+.projects tbody tr:hover td {
+    background-color: #faf7f7;
+}
+
+.projects table img {
+    width: 32px;
+    height: 32px;
+    background: white;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.projects table img:not(:first-child) {
+    margin-left: -20px;
+}
+
+.projects table .label {
+    font-size: 13px;
+}
+
+/* End Projects Tabel */
+/* <!-- End  Social Media Widget --> */
